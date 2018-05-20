@@ -21,16 +21,16 @@ def chnge():
             i += 1
 
     except FileNotFoundError:
-        showinfo("Error", "enter Valid Location Bruv!")
+        showinfo("Error", "Enter Valid Location Dude!")
 
     except FileExistsError:
-        showinfo("Error", "Dude You High!, this file already exists")
+        showinfo("Error", "You High? this file already exists!")
 
     except OSError:
-        showinfo("Error", "Dude enter valid name with no special characters like \ / % * | and whatever... I dont know")
+        showinfo("Error", "Will you plz Enter valid name with no special characters like \ / % * | and whatever... I dont know")
 
     else:
-        showinfo("Success","Done Bruv! You owe shurikns a cup of tea!!")
+        showinfo("Success","Done Bruv (Sorry if you aren't.)! You owe me a cup of tea!!")
 
 window.title("Naam Parivartan!")
 window.iconbitmap(r'icon.ico')
@@ -47,5 +47,5 @@ exten = Label(window, text="Enter the extension").grid(row=3, column=0, sticky=E
 submit = Button(window, command=chnge, text="Submit me", bg="#637985").grid(columnspan = 2)
 quit = Button(window, command = window.quit, text = "Exit", bg="red").grid(columnspan = 2)
 
-
+cred = Label(window, text="- Made By one and only Saurabh Jagtap").grid(columnspan = 2)
 window.mainloop()
